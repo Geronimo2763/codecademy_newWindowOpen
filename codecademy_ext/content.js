@@ -50,5 +50,10 @@ window.addEventListener('load', () => {
         const footButtons = myfooter.firstChild.childNodes[2];
 
         footButtons.insertBefore(link,footButtons.firstChild);
+
+         setInterval(() => {
+            link.href = iframe.src;
+            console.log("updated")
+        }, 6000);
     }
 })
