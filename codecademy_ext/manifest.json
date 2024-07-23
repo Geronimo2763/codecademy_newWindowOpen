@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Codecademy Open In New Tab",
+    "version": "1.0",
+    "description": "Codecademy Open In New Tab",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.codecademy.com/*"],  
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
